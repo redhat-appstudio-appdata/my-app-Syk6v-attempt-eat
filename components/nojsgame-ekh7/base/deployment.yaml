@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nojsgame-ekh7
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:mdsaud-tenant-nojsgame-ekh7
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c99f3bf827554b2befb2a3f224d1961243cd165254ae60b977520f9dd645912e
         name: my-nodejs
         ports:
         - containerPort: 3001
