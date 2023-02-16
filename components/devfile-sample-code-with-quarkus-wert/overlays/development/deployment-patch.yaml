@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-wert
+  namespace: mdsaud-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:7d29f6a7399c1f69ede7d4628b2a4ee634c8995a375babd0052d61fe53343e3a
+        name: my-java-quarkus
+        resources: {}
+status: {}
